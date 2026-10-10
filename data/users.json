@@ -10,5 +10,11 @@
     "full_name": "Петрова Анна Сергеевна",
     "email": "petrova@example.com",
     "position": "Менеджер"
+  },
+  {
+    "id": 3,
+    "full_name": "Дуаев Д.Д.",
+    "email": "dania227@mail.ru",
+    "position": "xd"
   }
 ]
