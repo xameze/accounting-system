@@ -96,3 +96,28 @@
 ## Проверка качества кода
 
     flake8 .
+
+    
+## Веб-интерфейс (Django)
+
+Приложение дополнено веб-интерфейсом на Django 5.2.
+
+### Страницы
+
+- `/` — главная (view `homepage.views.index`);
+- `/users/` — список пользователей (view `users.views.users_list`);
+- `/users/<id>/` — пользователь (view `users.views.user_detail`);
+- `/systems/` — список систем (view `systems.views.systems_list`);
+- `/systems/<id>/` — система (view `systems.views.system_detail`);
+- `/accounts/` — список учётных записей (view `accounts.views.accounts_list`);
+- `/accounts/<id>/` — учётная запись (view `accounts.views.account_detail`).
+
+### Запуск веб-версии
+
+    python manage.py runserver
+
+После запуска открыть: http://127.0.0.1:8000/
+
+### Запуск консольной версии (сохранена)
+
+    python main.py

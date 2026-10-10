@@ -63,3 +63,10 @@ def get_system_by_id(systems: List[System],
         if system.id == system_id:
             return system
     return None
+def find_system_by_id(systems: List[System],
+                      system_id: int) -> Optional[System]:
+    """Найти систему по идентификатору."""
+    for system in systems:
+        if system.id == system_id:
+            return system
+    return None

@@ -183,3 +183,10 @@ def filter_expiring_soon(accounts: List[Account],
         if 0 <= left <= days:
             result.append(account)
     return result
+def find_account_by_id(accounts: List[Account],
+                       account_id: int) -> Optional[Account]:
+    """Найти учётную запись по идентификатору."""
+    for account in accounts:
+        if account.id == account_id:
+            return account
+    return None
